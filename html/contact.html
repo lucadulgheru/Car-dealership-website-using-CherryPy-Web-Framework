@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html>
+
+    <script>
+    
+        function sumbitMessage(){
+
+            if(document.getElementById("fname").value == "" ||
+               document.getElementById("phone").value == "" ||
+               document.getElementById("subject").value == ""){
+
+                    alert("You cannot leave empty fields!");
+
+               }
+
+
+            else{   
+
+            document.getElementById("fname").value = "";
+            document.getElementById("phone").value = "";
+            document.getElementById("subject").value = "";
+
+            alert("Message sent successfully! One of our agents will get back to you as quick as possible.");
+
+            }
+
+        }
+    
+    
+    </script>
+
+
+
+    <link href="../css/contact.css" rel="stylesheet">
+
+
+    <div class="container">
+
+        <a href="index" id="logolink">
+            <img alt="AutoRIL" src="../img/logo_transparent.png" width="75" height="75">
+        </a>
+
+        <div style="text-align:center">
+          <h2>AutoRIL - Contact us</h2>
+          <p>If you have any questions, leave us a message and we'll get back to you shortly:</p>
+        </div>
+        <div class="row">
+          <div class="column">
+            <img src="../img/contact/carpark.jpg" style="width:100%">
+          </div>
+          <div class="column">
+           
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Your full name...">
+              <label for="phone">Phone number</label>
+              <input type="text" id="phone" name="phone" placeholder="Your phone number...">
+              <label for="country">Country</label>
+              <select id="country" name="country">
+                <option value="romania">Romania</option>
+                <option value="uk">United Kingdom</option>
+                <option value="france">France</option>
+              </select>
+              <label for="subject">Subject</label>
+              <textarea id="subject" name="subject" placeholder="Your message..." style="height:170px"></textarea>
+              <input type="submit" value="Submit" onclick="sumbitMessage()">
+      
+          </div>
+        </div>
+      </div> 
+
+
+
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title></title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<link href="../css/style.css" rel="stylesheet">
+	
+
+
+
+</head>
+
+<body>
+
+<div class="wrapper">
+
+
+		
+		<div class="topnav" id="myTopnav">
+
+			<a href="index" id="logolink">
+				<img alt="AutoRIL" src="../img/logo_transparent.png" width="75" height="75">
+			</a>
+
+			<a href="index" id="link" class="active">Home</a>
+			<a href="#news" id="link">News</a>
+			<a href="contact" id="link">Contact</a>
+			<a href="about" id="link">About</a>
+		
+		  </div>
+
+
+
+		  <div class ="pageinfo">
+
+
+			<img src="../img/slides/slide1.jpg" alt="BMW">
+			<img src="../img/slides/slide2.jpg" alt="Audi">
+		
+
+
+		  </div>
+
+
+
+		  
+		  <div class="pagecontent">
+
+				<h1>Show cars by Category</h1>
+
+
+				
+				<div class="row">
+					<div class="column">
+					  <div class="card">
+						<img src="../img/categories/hatchback.png" alt="Hatchback" style="width:200px; height:200px;">
+						<div class="container">
+						  <h2>Hatchback</h2>
+						  <p>Agile due its reduced size.</p>
+						  <form action="displaybycategory" method="POST">
+							<p><button class="button" type="submit" name="category" value="hatchback" >Check available models</button></p>
+						</form>
+						</div>
+					  </div>
+					</div>
+				  
+					<div class="column">
+					  <div class="card">
+						<img src="../img/categories/suv.png" alt="SUV" style="width:200px; height:200px;">
+						<div class="container">
+						  <h2>SUV</h2>
+						  <p>Extremely versatile due to its power and utility.</p>
+						  <form action="displaybycategory" method="POST">
+							<p><button class="button" type="submit" name="category" value="suv" >Check available models</button></p>
+						</form>
+						</div>
+					  </div>
+					</div>
+				  
+					<div class="column">	
+					  <div class="card">
+						<img src="../img/categories/sedan.png" alt="Sedan" style="width:200px; height:200px;">
+						<div class="container">
+						  <h2>Sedan</h2>
+						  <p>Enough space to fit all needs.</p>
+						  <form action="displaybycategory" method="POST">
+							<p><button class="button" type="submit" name="category" value="sedan" >Check available models</button></p>
+						</form>
+						</div>
+					  </div>
+					</div>
+				  </div> 
+
+				
+
+				  <div class="row">
+					<div class="column">
+					  <div class="card">
+						<img src="../img/categories/convertible.png" alt="Convertible" style="width:200px; height:200px;">
+						<div class="container">
+						  <h2>Convertible</h2>
+						  <p>Gives you all the freedom you deserve.</p>
+						  <form action="displaybycategory" method="POST">
+							<p><button class="button" type="submit" name="category" value="convertible" >Check available models</button></p>
+						</form>
+						</div>
+					  </div>
+					</div>
+				  
+					<div class="column">
+					  <div class="card">
+						<img src="../img/categories/coupe.png" alt="Coupe" style="width:200px; height:200px;">
+						<div class="container">
+						  <h2>Coupe</h2>
+						  <p>Sporty looks, aggressive driving.</p>
+						  <form action="displaybycategory" method="POST">
+							<p><button class="button" type="submit" name="category" value="coupe" >Check available models</button></p>
+						</form>
+						</div>
+					  </div>
+					</div>
+				  
+					<div class="column">
+					  <div class="card">
+						<img src="../img/categories/sports.png" alt="Sports" style="width:200px; height:200px;">
+						<div class="container">
+						  <h2>Sports</h2>
+						  <p>City conqueror, track monster.</p>
+						  <form action="displaybycategory" method="POST">
+							<p><button class="button" type="submit" name="category" value="sports" >Check available models</button></p>
+						</form>
+						</div>
+					  </div>
+					</div>
+				  </div>
+
+
+
+				  <h1>Show cars by Make</h1>
+
+
+				  <form action="displaybymake" method="POST">
+				
+				  <table style="width:100%" id="carmakes">
+					<tr>
+					  <td><p><button class="button" type="submit" name="make" value="Audi" >Audi</button></p></td>
+					  <td><p><button class="button" type="submit" name="make" value="Fiat" >Fiat</button></p></td>
+					  <td><p><button class="button" type="submit" name="make" value="Hyundai" >Hyundai</button></p></td>
+					  <td><p><button class="button" type="submit" name="make" value="Mazda" >Mazda</button></p></td>
+					  <td><p><button class="button" type="submit" name="make" value="Nissan" >Nissan</button></p></td>
+					  <td><p><button class="button" type="submit" name="make" value="Toyota" >Toyota</button></p></td>
+					</tr>
+					<tr>
+					  <td><p><button class="button" type="submit" name="make" value="BMW" >BMW</button></p></td>
+					  <td><p><button class="button" type="submit" name="make" value="Ford" >Ford</button></p></td>
+					  <td><p><button class="button" type="submit" name="make" value="Kia" >Kia</button></p></td>
+					  <td><p><button class="button" type="submit" name="make" value="Mercedes-Benz" >Mercedes-Benz</button></p></td>
+					  <td><p><button class="button" type="submit" name="make" value="Porsche" >Porsche</button></p></td>
+					  <td><p><button class="button" type="submit" name="make" value="Volkswagen" >Volkswagen</button></p></td>
+					</tr>
+					<tr>
+					  <td><p><button class="button" type="submit" name="make" value="Chevrolet" >Chevrolet</button></p></td>
+					  <td><p><button class="button" type="submit" name="make" value="Honda" >Honda</button></p></td>
+					  <td><p><button class="button" type="submit" name="make" value="Range Rover" >Range Rover</button></p></td>
+					  <td><p><button class="button" type="submit" name="make" value="Mitsubishi" >Mitsubishi</button></p></td>
+					  <td><p><button class="button" type="submit" name="make" value="Subaru" >Subaru</button></p></td>
+					  <td><p><button class="button" type="submit" name="make" value="Volvo" >Volvo</button></p></td>
+					</tr>
+				  </table>
+
+				  </form>
+
+
+
+		  </div>
+
+
+
+	
+
+</div>
+
+</body>
+</html>

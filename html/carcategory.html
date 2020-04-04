@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+
+<html>
+
+    <link href="../css/carcategory.css" rel="stylesheet">
+
+    <div class="uppercontent">
+
+
+
+        <a href="index" id="logolink">
+            <img alt="AutoRIL" src="../img/logo_transparent.png" width="75" height="75">
+        </a>
+
+        <h2>Current category: ${categ}</h2>
+        <hr>
+
+    </div>
+
+
+        <table><tr>
+
+
+
+
+        % for a in mydata:
+
+           % if loop.index % 3 == 0:
+
+                </tr><tr><td>
+
+                    <div class="card" style="margin-left: 125px;">
+                        % if a[0] == 1:
+                        <img src="../img/cars/1.jpg" alt="Car" style="width:200px; height: 200px;">
+                        % elif a[0] == 2:
+                        <img src="../img/cars/2.jpg" alt="Car" style="width:200px; height: 200px;">
+                        % elif a[0] == 3:
+                        <img src="../img/cars/3.jpg" alt="Car" style="width:200px; height: 200px;">
+                        % elif a[0] == 4:
+                        <img src="../img/cars/4.jpg" alt="Car" style="width:200px; height: 200px;">
+                        % elif a[0] == 5:
+                        <img src="../img/cars/5.jpg" alt="Car" style="width:200px; height: 200px;">
+                        % elif a[0] == 6:
+                        <img src="../img/cars/6.jpg" alt="Car" style="width:200px; height: 200px;">
+                        % elif a[0] == 7:
+                        <img src="../img/cars/7.jpg" alt="Car" style="width:200px; height: 200px;">
+                        % elif a[0] == 8:
+                        <img src="../img/cars/8.jpg" alt="Car" style="width:200px; height: 200px;">
+                        % elif a[0] == 9:
+                        <img src="../img/cars/9.jpg" alt="Car" style="width:200px; height: 200px;">
+                        % elif a[0] == 10:
+                        <img src="../img/cars/10.jpg" alt="Car" style="width:200px; height: 200px;">
+                        % elif a[0] == 11:
+                        <img src="../img/cars/11.jpg" alt="Car" style="width:200px; height: 200px;">
+                        % elif a[0] == 12:
+                        <img src="../img/cars/12.jpg" alt="Car" style="width:200px; height: 200px;">
+                        % elif a[0] == 13:
+                        <img src="../img/cars/13.jpg" alt="Car" style="width:200px; height: 200px;">
+                        % elif a[0] == 14:
+                        <img src="../img/cars/14.jpg" alt="Car" style="width:200px; height: 200px;">
+                        % elif a[0] == 15:
+                        <img src="../img/cars/15.jpg" alt="Car" style="width:200px; height: 200px;">
+                        % elif a[0] == 16:
+                        <img src="../img/cars/16.jpg" alt="Car" style="width:200px; height: 200px;">
+                        % elif a[0] == 17:
+                        <img src="../img/cars/17.jpg" alt="Car" style="width:200px; height: 200px;">
+                        % elif a[0] == 18:
+                        <img src="../img/cars/18.jpg" alt="Car" style="width:200px; height: 200px;">
+                        % elif a[0] == 19:
+                        <img src="../img/cars/19.jpg" alt="Car" style="width:200px; height: 200px;">
+                        % elif a[0] == 20:
+                        <img src="../img/cars/20.jpg" alt="Car" style="width:200px; height: 200px;">
+                        %endif
+                        <h1>${a[1]}</h1>
+                        <p>${a[2]}</p>
+                        <p class="price">EUR ${a[4]}</p>
+                        <form action="carinfo" method="POST">
+                            % if a[0] == 1:
+                            <p><button type="submit" name="info" value="1" >Check it out</button></p>
+                            % elif a[0] == 2:
+                            <p><button type="submit" name="info" value="2" >Check it out</button></p>
+                            % elif a[0] == 3:
+                            <p><button type="submit" name="info" value="3" >Check it out</button></p>
+                            % elif a[0] == 4:
+                            <p><button type="submit" name="info" value="4" >Check it out</button></p>
+                            % elif a[0] == 5:
+                            <p><button type="submit" name="info" value="5" >Check it out</button></p>
+                            % elif a[0] == 6:
+                            <p><button type="submit" name="info" value="6" >Check it out</button></p>
+                            % elif a[0] == 7:
+                            <p><button type="submit" name="info" value="7" >Check it out</button></p>
+                            % elif a[0] == 8:
+                            <p><button type="submit" name="info" value="8" >Check it out</button></p>
+                            % elif a[0] == 9:
+                            <p><button type="submit" name="info" value="9" >Check it out</button></p>
+                            % elif a[0] == 10:
+                            <p><button type="submit" name="info" value="10" >Check it out</button></p>
+                            % elif a[0] == 11:
+                            <p><button type="submit" name="info" value="11" >Check it out</button></p>
+                            % elif a[0] == 12:
+                            <p><button type="submit" name="info" value="12" >Check it out</button></p>
+                            % elif a[0] == 13:
+                            <p><button type="submit" name="info" value="13" >Check it out</button></p>
+                            % elif a[0] == 14:
+                            <p><button type="submit" name="info" value="14" >Check it out</button></p>
+                            % elif a[0] == 15:
+                            <p><button type="submit" name="info" value="15" >Check it out</button></p>
+                            % elif a[0] == 16:
+                            <p><button type="submit" name="info" value="16" >Check it out</button></p>
+                            % elif a[0] == 17:
+                            <p><button type="submit" name="info" value="17" >Check it out</button></p>
+                            % elif a[0] == 18:
+                            <p><button type="submit" name="info" value="18" >Check it out</button></p>
+                            % elif a[0] == 19:
+                            <p><button type="submit" name="info" value="19" >Check it out</button></p>
+                            % elif a[0] == 20:
+                            <p><button type="submit" name="info" value="20" >Check it out</button></p>
+                            %endif
+						</form>
+                    </div> 
+
+
+                </td>
+
+
+            % elif loop.index %3 != 0:
+
+
+                <td>
+
+                    <div class="card">
+                        % if a[0] == 1:
+                        <img src="../img/cars/1.jpg" alt="Car" style="width:200px; height: 200px;">
+                        % elif a[0] == 2:
+                        <img src="../img/cars/2.jpg" alt="Car" style="width:200px; height: 200px;">
+                        % elif a[0] == 3:
+                        <img src="../img/cars/3.jpg" alt="Car" style="width:200px; height: 200px;">
+                        % elif a[0] == 4:
+                        <img src="../img/cars/4.jpg" alt="Car" style="width:200px; height: 200px;">
+                        % elif a[0] == 5:
+                        <img src="../img/cars/5.jpg" alt="Car" style="width:200px; height: 200px;">
+                        % elif a[0] == 6:
+                        <img src="../img/cars/6.jpg" alt="Car" style="width:200px; height: 200px;">
+                        % elif a[0] == 7:
+                        <img src="../img/cars/7.jpg" alt="Car" style="width:200px; height: 200px;">
+                        % elif a[0] == 8:
+                        <img src="../img/cars/8.jpg" alt="Car" style="width:200px; height: 200px;">
+                        % elif a[0] == 9:
+                        <img src="../img/cars/9.jpg" alt="Car" style="width:200px; height: 200px;">
+                        % elif a[0] == 10:
+                        <img src="../img/cars/10.jpg" alt="Car" style="width:200px; height: 200px;">
+                        % elif a[0] == 11:
+                        <img src="../img/cars/11.jpg" alt="Car" style="width:200px; height: 200px;">
+                        % elif a[0] == 12:
+                        <img src="../img/cars/12.jpg" alt="Car" style="width:200px; height: 200px;">
+                        % elif a[0] == 13:
+                        <img src="../img/cars/13.jpg" alt="Car" style="width:200px; height: 200px;">
+                        % elif a[0] == 14:
+                        <img src="../img/cars/14.jpg" alt="Car" style="width:200px; height: 200px;">
+                        % elif a[0] == 15:
+                        <img src="../img/cars/15.jpg" alt="Car" style="width:200px; height: 200px;">
+                        % elif a[0] == 16:
+                        <img src="../img/cars/16.jpg" alt="Car" style="width:200px; height: 200px;">
+                        % elif a[0] == 17:
+                        <img src="../img/cars/17.jpg" alt="Car" style="width:200px; height: 200px;">
+                        % elif a[0] == 18:
+                        <img src="../img/cars/18.jpg" alt="Car" style="width:200px; height: 200px;">
+                        % elif a[0] == 19:
+                        <img src="../img/cars/19.jpg" alt="Car" style="width:200px; height: 200px;">
+                        % elif a[0] == 20:
+                        <img src="../img/cars/20.jpg" alt="Car" style="width:200px; height: 200px;">
+                        %endif
+                        <h1>${a[1]}</h1>
+                        <p>${a[2]}</p>
+                        <p class="price">EUR ${a[4]}</p>
+                        <form action="carinfo" method="POST">
+                            % if a[0] == 1:
+                            <p><button type="submit" name="info" value="1" >Check it out</button></p>
+                            % elif a[0] == 2:
+                            <p><button type="submit" name="info" value="2" >Check it out</button></p>
+                            % elif a[0] == 3:
+                            <p><button type="submit" name="info" value="3" >Check it out</button></p>
+                            % elif a[0] == 4:
+                            <p><button type="submit" name="info" value="4" >Check it out</button></p>
+                            % elif a[0] == 5:
+                            <p><button type="submit" name="info" value="5" >Check it out</button></p>
+                            % elif a[0] == 6:
+                            <p><button type="submit" name="info" value="6" >Check it out</button></p>
+                            % elif a[0] == 7:
+                            <p><button type="submit" name="info" value="7" >Check it out</button></p>
+                            % elif a[0] == 8:
+                            <p><button type="submit" name="info" value="8" >Check it out</button></p>
+                            % elif a[0] == 9:
+                            <p><button type="submit" name="info" value="9" >Check it out</button></p>
+                            % elif a[0] == 10:
+                            <p><button type="submit" name="info" value="10" >Check it out</button></p>
+                            % elif a[0] == 11:
+                            <p><button type="submit" name="info" value="11" >Check it out</button></p>
+                            % elif a[0] == 12:
+                            <p><button type="submit" name="info" value="12" >Check it out</button></p>
+                            % elif a[0] == 13:
+                            <p><button type="submit" name="info" value="13" >Check it out</button></p>
+                            % elif a[0] == 14:
+                            <p><button type="submit" name="info" value="14" >Check it out</button></p>
+                            % elif a[0] == 15:
+                            <p><button type="submit" name="info" value="15" >Check it out</button></p>
+                            % elif a[0] == 16:
+                            <p><button type="submit" name="info" value="16" >Check it out</button></p>
+                            % elif a[0] == 17:
+                            <p><button type="submit" name="info" value="17" >Check it out</button></p>
+                            % elif a[0] == 18:
+                            <p><button type="submit" name="info" value="18" >Check it out</button></p>
+                            % elif a[0] == 19:
+                            <p><button type="submit" name="info" value="19" >Check it out</button></p>
+                            % elif a[0] == 20:
+                            <p><button type="submit" name="info" value="20" >Check it out</button></p>
+                            %endif
+						</form>
+                    </div> 
+
+
+                </td>
+
+        % endif       
+
+
+        % endfor
+
+
+</html>
